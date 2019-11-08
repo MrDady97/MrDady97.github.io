@@ -168,7 +168,7 @@ function retry() {
 
 function ready() { 
 	LOCK = true;
-	message("ready!");
+	message("Sbronzo?!");
 	
 	playReadySound();
 	setTimeout("go()", "4100");
@@ -284,7 +284,7 @@ function lifes(l) {
 
 function gameover() { 
 	GAMEOVER = true;
-	message("game over");
+	message("Stasera non finirai sbronzo");
 	stopTimes();
 
 	erasePacman();
@@ -305,7 +305,7 @@ function gameover() {
 
 function message(m) { 
 	$("#message").html(m);
-	if (m === "game over") $("#message").addClass("red");
+	if (m === "Stasera non finirai sbronzo") $("#message").addClass("red");
 }
 function clearMessage() { 
 	$("#message").html("");
